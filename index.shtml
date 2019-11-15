@@ -17,7 +17,7 @@
     <div class="container">
         <div class="logo"><a href="#"><img src="resources/images/logo.png" alt=""></a></div>
         <div class="header-rt">
-            <a href="#" class="menu-btn" onclick="slideToggle()"><span></span><span></span></a>
+            <a href="#" class="menu-btn"><span></span><span></span></a>
             <ul class="nav" id="nav">
                <li><a href="#" class="active"><span>BEDROOM</span></a></li>
                 <li><a href="#"><span>LIVING ROOM</span></a></li>
@@ -49,7 +49,9 @@
     <div class="main-content">
         
         <div id="sidebar" class="sidebar">
-            <div class="title animated"  data-animation="fadeInLeft" data-animation-delay="200"></div>
+            <div class="title-wrap animated"  data-animation="fadeInLeft" data-animation-delay="500" >
+                <div class="title"></div>
+            </div>
             <div class="sidebar__inner">
                 
                 <ul id="side-nav" class="animated"  data-animation="fadeInLeft" data-animation-delay="200">
@@ -70,7 +72,7 @@
            <div id="section-1" class="section">
                <div class="pro-detail  animated"  data-animation="fadeIn" data-animation-delay="500">
                    <div class="product-img  animated" data-animation="fadeInUp" data-animation-delay="800">
-                       <figure><img src="resources/images/product1.jpg" alt=""></figure>
+                       <figure><img src="resources/images/product1.jpg" alt="" class="thumbnail"></figure>
                       
                    </div>
                    <div class="product-info  animated"  data-animation="fadeInRight" data-animation-delay="800">
@@ -100,16 +102,18 @@
                        <div class="select-pro-color">
                            <h6>Color:</h6>
                            <ul>
-                                <li><label class="yellow"><input type="radio" name="select-color"></label></li>
-                                <li><label class="black"><input type="radio" name="select-color"></label></li>
-                                <li><label class="white"><input type="radio" name="select-color"></label></li>
+                                <li><label class="custom-radio yellow"><input type="radio" name="select-color"></label></li>
+                                <li><label class="custom-radio black"><input type="radio" name="select-color"></label></li>
+                                <li><label class="custom-radio white"><input type="radio" name="select-color"></label></li>
+                               
+                               
                            </ul>
                        </div>
                        
                        <div class="spinner">
-                           <button>-</button>
-                           <input type="number" value="1">
-                           <button>+</button>
+                           <button class="decreament-btn spinner-btn">-</button>
+                           <input type="text" value="1" class="spin-val">
+                           <button class="increament-btn spinner-btn">+</button>
                        </div>
                        <button type="submit" class="primary-btn add-to-cart-btn">Add to Cart</button>
                    </div>
@@ -122,7 +126,7 @@
             <div class="pro-discr animated" data-animation="fadeInUp" data-animation-delay="300">
                 <div class="pro-discr-img animated" data-animation="fadeInUp" data-animation-delay="600">
                     <figure>
-                        <img src="resources/images/product2.jpg" alt="">
+                        <img src="resources/images/product2.jpg" alt=""  class="thumbnail">
                     </figure>
                 </div>
                 <div class="pro-discr-info animated" data-animation="fadeInUp" data-animation-delay="600">
@@ -138,7 +142,7 @@
             <div class="pro-discr full-img-wrap ">
                 <div class="pro-discr-img full-width  animated" data-animation="fadeInLeft" data-animation-delay="200"  >
                     <figure>
-                        <img src="resources/images/product3.jpg" alt="">
+                        <img src="resources/images/product3.jpg" alt=""   class="thumbnail">
                     </figure>
                     <a href="#" class="video-btn  animated" data-animation="fadeInUp" data-animation-delay="800"></a>
                 </div>
@@ -153,23 +157,426 @@
                     <h6 class="hor-ttl">Suggested Accomodation</h6>
                 </div>
                 <div class="pro-discr-img full-width animated" data-animation="fadeInLeft" data-animation-delay="200">
-                    <figure><img src="resources/images/product4.jpg" alt=""></figure>
+                    <figure><img src="resources/images/product4.jpg" alt=""   class="thumbnail"></figure>
                     <a href="#" class="download-img animated"  data-animation="fadeInRight" data-animation-delay="800" id="download-pdf"><em class="btn-3"><i class="fa fa-arrow-down" aria-hidden="true"></i></em>DOWNLOAD PDF</a>
                 </div>  
                 <div class="pro-sm-img animated" data-animation="fadeInLeft" data-animation-delay="400">
-                     <figure><img src="resources/images/sm-pro.jpg" alt=""></figure>
+                     <figure><img src="resources/images/sm-pro.jpg" alt="" ></figure>
                 </div>
             </div>
             </div>
         </div>
 
         <div id="section-3" class="section">
-            Section 3
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="review-section">
+                <h3>23 Reviews for Nudie Extendable Sofa </h3>
+                <div class="user-ratings">
+                    <span class="rating four-star"></span><em><span>4.31</span> (61 review)</em>
+                </div>
+                <div class="review-list-wrap">
+                <ul class="review-list">
+                    <li>
+                        <div class="cust-profile">
+                            <figure><img src="resources/images/user1.jpg" alt=""></figure>
+                            <strong class="user-name">Johnatan Doe</strong>
+                            <span class="date">August 28, 2016:</span>
+                        </div>
+                        <div class="cust-comments">
+                            <div class="user-ratings">
+                                 <strong>Excelent</strong>
+                                <span class="rating four-star"></span>
+                            </div>
+                            <p>Lorem gypsum dolor. amet, consedetur adiposong el, sed do eiusrnod tempor incidhriunt ut labore et dolore magna ahqua Ut enan ad mg,. venom, qt. noslrud exercrtahon ullarnco labonsrhso ut abquip ex ea commodo consequat Du's aute wure dolor in reprehendent 1n voluptate veld esse cilium dolore eu fug,wt nulls panatur occaecat cupdatat non proder, suns on cut'pa qua offroa deserunt molht arum hd esllaborurn </p>
+                             
+                            <a href="#" class="text-link">Add Comment</a>
+                        </div>
+                        <span class="clear"></span>
+                    </li>
+                    <li>
+                        <div class="cust-profile">
+                            <figure><img src="resources/images/user2.jpg" alt=""></figure>
+                            <strong class="user-name">Johnatan Doe</strong>
+                            <span class="date">August 28, 2016:</span>
+                        </div>
+                        <div class="cust-comments">
+                             <div class="user-ratings">
+                                 <strong>Excelent</strong>
+                                <span class="rating four-star"></span>
+                            </div>
+                            <p>Lorem gypsum dolor. amet, consedetur adiposong el, sed do eiusrnod tempor incidhriunt ut labore et dolore magna ahqua Ut enan ad mg,. venom, qt. noslrud exercrtahon ullarnco labonsrhso ut abquip ex ea commodo consequat Du's aute wure dolor in reprehendent 1n voluptate veld esse cilium dolore eu fug,wt nulls panatur occaecat cupdatat non proder, suns on cut'pa qua offroa deserunt molht arum hd esllaborurn </p>
+                            
+                            
+                            <a href="#" class="text-link">Add Comment</a>
+                        </div>
+                        <span class="clear"></span>
+                    </li><li>
+                        <div class="cust-profile">
+                            <figure><img src="resources/images/user1.jpg" alt=""></figure>
+                            <strong class="user-name">Johnatan Doe</strong>
+                            <span class="date">August 28, 2016:</span>
+                        </div>
+                        <div class="cust-comments">
+                            <div class="user-ratings">
+                                 <strong>Excelent</strong>
+                                <span class="rating four-star"></span>
+                            </div>
+                            <p>Lorem gypsum dolor. amet, consedetur adiposong el, sed do eiusrnod tempor incidhriunt ut labore et dolore magna ahqua Ut enan ad mg,. venom, qt. noslrud exercrtahon ullarnco labonsrhso ut abquip ex ea commodo consequat Du's aute wure dolor in reprehendent 1n voluptate veld esse cilium dolore eu fug,wt nulls panatur occaecat cupdatat non proder, suns on cut'pa qua offroa deserunt molht arum hd esllaborurn </p>
+                             
+                            <a href="#" class="text-link">Add Comment</a>
+                        </div>
+                        <span class="clear"></span>
+                    </li>
+                    <li>
+                        <div class="cust-profile">
+                            <figure><img src="resources/images/user2.jpg" alt=""></figure>
+                            <strong class="user-name">Johnatan Doe</strong>
+                            <span class="date">August 28, 2016:</span>
+                        </div>
+                        <div class="cust-comments">
+                             <div class="user-ratings">
+                                 <strong>Excelent</strong>
+                                <span class="rating four-star"></span>
+                            </div>
+                            <p>Lorem gypsum dolor. amet, consedetur adiposong el, sed do eiusrnod tempor incidhriunt ut labore et dolore magna ahqua Ut enan ad mg,. venom, qt. noslrud exercrtahon ullarnco labonsrhso ut abquip ex ea commodo consequat Du's aute wure dolor in reprehendent 1n voluptate veld esse cilium dolore eu fug,wt nulls panatur occaecat cupdatat non proder, suns on cut'pa qua offroa deserunt molht arum hd esllaborurn </p>
+                            
+                            
+                            <a href="#" class="text-link">Add Comment</a>
+                        </div>
+                        <span class="clear"></span>
+                    </li><li>
+                        <div class="cust-profile">
+                            <figure><img src="resources/images/user1.jpg" alt=""></figure>
+                            <strong class="user-name">Johnatan Doe</strong>
+                            <span class="date">August 28, 2016:</span>
+                        </div>
+                        <div class="cust-comments">
+                            <div class="user-ratings">
+                                 <strong>Excelent</strong>
+                                <span class="rating four-star"></span>
+                            </div>
+                            <p>Lorem gypsum dolor. amet, consedetur adiposong el, sed do eiusrnod tempor incidhriunt ut labore et dolore magna ahqua Ut enan ad mg,. venom, qt. noslrud exercrtahon ullarnco labonsrhso ut abquip ex ea commodo consequat Du's aute wure dolor in reprehendent 1n voluptate veld esse cilium dolore eu fug,wt nulls panatur occaecat cupdatat non proder, suns on cut'pa qua offroa deserunt molht arum hd esllaborurn </p>
+                             
+                            <a href="#" class="text-link">Add Comment</a>
+                        </div>
+                        <span class="clear"></span>
+                    </li>
+                    <li>
+                        <div class="cust-profile">
+                            <figure><img src="resources/images/user2.jpg" alt=""></figure>
+                            <strong class="user-name">Johnatan Doe</strong>
+                            <span class="date">August 28, 2016:</span>
+                        </div>
+                        <div class="cust-comments">
+                             <div class="user-ratings">
+                                 <strong>Excelent</strong>
+                                <span class="rating four-star"></span>
+                            </div>
+                            <p>Lorem gypsum dolor. amet, consedetur adiposong el, sed do eiusrnod tempor incidhriunt ut labore et dolore magna ahqua Ut enan ad mg,. venom, qt. noslrud exercrtahon ullarnco labonsrhso ut abquip ex ea commodo consequat Du's aute wure dolor in reprehendent 1n voluptate veld esse cilium dolore eu fug,wt nulls panatur occaecat cupdatat non proder, suns on cut'pa qua offroa deserunt molht arum hd esllaborurn </p>
+                            
+                            
+                            <a href="#" class="text-link">Add Comment</a>
+                        </div>
+                        <span class="clear"></span>
+                    </li><li>
+                        <div class="cust-profile">
+                            <figure><img src="resources/images/user1.jpg" alt=""></figure>
+                            <strong class="user-name">Johnatan Doe</strong>
+                            <span class="date">August 28, 2016:</span>
+                        </div>
+                        <div class="cust-comments">
+                            <div class="user-ratings">
+                                 <strong>Excelent</strong>
+                                <span class="rating four-star"></span>
+                            </div>
+                            <p>Lorem gypsum dolor. amet, consedetur adiposong el, sed do eiusrnod tempor incidhriunt ut labore et dolore magna ahqua Ut enan ad mg,. venom, qt. noslrud exercrtahon ullarnco labonsrhso ut abquip ex ea commodo consequat Du's aute wure dolor in reprehendent 1n voluptate veld esse cilium dolore eu fug,wt nulls panatur occaecat cupdatat non proder, suns on cut'pa qua offroa deserunt molht arum hd esllaborurn </p>
+                             
+                            <a href="#" class="text-link">Add Comment</a>
+                        </div>
+                        <span class="clear"></span>
+                    </li>
+                    <li>
+                        <div class="cust-profile">
+                            <figure><img src="resources/images/user2.jpg" alt=""></figure>
+                            <strong class="user-name">Johnatan Doe</strong>
+                            <span class="date">August 28, 2016:</span>
+                        </div>
+                        <div class="cust-comments">
+                             <div class="user-ratings">
+                                 <strong>Excelent</strong>
+                                <span class="rating four-star"></span>
+                            </div>
+                            <p>Lorem gypsum dolor. amet, consedetur adiposong el, sed do eiusrnod tempor incidhriunt ut labore et dolore magna ahqua Ut enan ad mg,. venom, qt. noslrud exercrtahon ullarnco labonsrhso ut abquip ex ea commodo consequat Du's aute wure dolor in reprehendent 1n voluptate veld esse cilium dolore eu fug,wt nulls panatur occaecat cupdatat non proder, suns on cut'pa qua offroa deserunt molht arum hd esllaborurn </p>
+                            
+                            
+                            <a href="#" class="text-link">Add Comment</a>
+                        </div>
+                        <span class="clear"></span>
+                    </li><li>
+                        <div class="cust-profile">
+                            <figure><img src="resources/images/user1.jpg" alt=""></figure>
+                            <strong class="user-name">Johnatan Doe</strong>
+                            <span class="date">August 28, 2016:</span>
+                        </div>
+                        <div class="cust-comments">
+                            <div class="user-ratings">
+                                 <strong>Excelent</strong>
+                                <span class="rating four-star"></span>
+                            </div>
+                            <p>Lorem gypsum dolor. amet, consedetur adiposong el, sed do eiusrnod tempor incidhriunt ut labore et dolore magna ahqua Ut enan ad mg,. venom, qt. noslrud exercrtahon ullarnco labonsrhso ut abquip ex ea commodo consequat Du's aute wure dolor in reprehendent 1n voluptate veld esse cilium dolore eu fug,wt nulls panatur occaecat cupdatat non proder, suns on cut'pa qua offroa deserunt molht arum hd esllaborurn </p>
+                             
+                            <a href="#" class="text-link">Add Comment</a>
+                        </div>
+                        <span class="clear"></span>
+                    </li>
+                    <li>
+                        <div class="cust-profile">
+                            <figure><img src="resources/images/user2.jpg" alt=""></figure>
+                            <strong class="user-name">Johnatan Doe</strong>
+                            <span class="date">August 28, 2016:</span>
+                        </div>
+                        <div class="cust-comments">
+                             <div class="user-ratings">
+                                 <strong>Excelent</strong>
+                                <span class="rating four-star"></span>
+                            </div>
+                            <p>Lorem gypsum dolor. amet, consedetur adiposong el, sed do eiusrnod tempor incidhriunt ut labore et dolore magna ahqua Ut enan ad mg,. venom, qt. noslrud exercrtahon ullarnco labonsrhso ut abquip ex ea commodo consequat Du's aute wure dolor in reprehendent 1n voluptate veld esse cilium dolore eu fug,wt nulls panatur occaecat cupdatat non proder, suns on cut'pa qua offroa deserunt molht arum hd esllaborurn </p>
+                            
+                            
+                            <a href="#" class="text-link">Add Comment</a>
+                        </div>
+                        <span class="clear"></span>
+                    </li><li>
+                        <div class="cust-profile">
+                            <figure><img src="resources/images/user1.jpg" alt=""></figure>
+                            <strong class="user-name">Johnatan Doe</strong>
+                            <span class="date">August 28, 2016:</span>
+                        </div>
+                        <div class="cust-comments">
+                            <div class="user-ratings">
+                                 <strong>Excelent</strong>
+                                <span class="rating four-star"></span>
+                            </div>
+                            <p>Lorem gypsum dolor. amet, consedetur adiposong el, sed do eiusrnod tempor incidhriunt ut labore et dolore magna ahqua Ut enan ad mg,. venom, qt. noslrud exercrtahon ullarnco labonsrhso ut abquip ex ea commodo consequat Du's aute wure dolor in reprehendent 1n voluptate veld esse cilium dolore eu fug,wt nulls panatur occaecat cupdatat non proder, suns on cut'pa qua offroa deserunt molht arum hd esllaborurn </p>
+                             
+                            <a href="#" class="text-link">Add Comment</a>
+                        </div>
+                        <span class="clear"></span>
+                    </li>
+                    <li>
+                        <div class="cust-profile">
+                            <figure><img src="resources/images/user2.jpg" alt=""></figure>
+                            <strong class="user-name">Johnatan Doe</strong>
+                            <span class="date">August 28, 2016:</span>
+                        </div>
+                        <div class="cust-comments">
+                             <div class="user-ratings">
+                                 <strong>Excelent</strong>
+                                <span class="rating four-star"></span>
+                            </div>
+                            <p>Lorem gypsum dolor. amet, consedetur adiposong el, sed do eiusrnod tempor incidhriunt ut labore et dolore magna ahqua Ut enan ad mg,. venom, qt. noslrud exercrtahon ullarnco labonsrhso ut abquip ex ea commodo consequat Du's aute wure dolor in reprehendent 1n voluptate veld esse cilium dolore eu fug,wt nulls panatur occaecat cupdatat non proder, suns on cut'pa qua offroa deserunt molht arum hd esllaborurn </p>
+                            
+                            
+                            <a href="#" class="text-link">Add Comment</a>
+                        </div>
+                        <span class="clear"></span>
+                    </li><li>
+                        <div class="cust-profile">
+                            <figure><img src="resources/images/user1.jpg" alt=""></figure>
+                            <strong class="user-name">Johnatan Doe</strong>
+                            <span class="date">August 28, 2016:</span>
+                        </div>
+                        <div class="cust-comments">
+                            <div class="user-ratings">
+                                 <strong>Excelent</strong>
+                                <span class="rating four-star"></span>
+                            </div>
+                            <p>Lorem gypsum dolor. amet, consedetur adiposong el, sed do eiusrnod tempor incidhriunt ut labore et dolore magna ahqua Ut enan ad mg,. venom, qt. noslrud exercrtahon ullarnco labonsrhso ut abquip ex ea commodo consequat Du's aute wure dolor in reprehendent 1n voluptate veld esse cilium dolore eu fug,wt nulls panatur occaecat cupdatat non proder, suns on cut'pa qua offroa deserunt molht arum hd esllaborurn </p>
+                             
+                            <a href="#" class="text-link">Add Comment</a>
+                        </div>
+                        <span class="clear"></span>
+                    </li>
+                    <li>
+                        <div class="cust-profile">
+                            <figure><img src="resources/images/user2.jpg" alt=""></figure>
+                            <strong class="user-name">Johnatan Doe</strong>
+                            <span class="date">August 28, 2016:</span>
+                        </div>
+                        <div class="cust-comments">
+                             <div class="user-ratings">
+                                 <strong>Excelent</strong>
+                                <span class="rating four-star"></span>
+                            </div>
+                            <p>Lorem gypsum dolor. amet, consedetur adiposong el, sed do eiusrnod tempor incidhriunt ut labore et dolore magna ahqua Ut enan ad mg,. venom, qt. noslrud exercrtahon ullarnco labonsrhso ut abquip ex ea commodo consequat Du's aute wure dolor in reprehendent 1n voluptate veld esse cilium dolore eu fug,wt nulls panatur occaecat cupdatat non proder, suns on cut'pa qua offroa deserunt molht arum hd esllaborurn </p>
+                            
+                            
+                            <a href="#" class="text-link">Add Comment</a>
+                        </div>
+                        <span class="clear"></span>
+                    </li><li>
+                        <div class="cust-profile">
+                            <figure><img src="resources/images/user1.jpg" alt=""></figure>
+                            <strong class="user-name">Johnatan Doe</strong>
+                            <span class="date">August 28, 2016:</span>
+                        </div>
+                        <div class="cust-comments">
+                            <div class="user-ratings">
+                                 <strong>Excelent</strong>
+                                <span class="rating four-star"></span>
+                            </div>
+                            <p>Lorem gypsum dolor. amet, consedetur adiposong el, sed do eiusrnod tempor incidhriunt ut labore et dolore magna ahqua Ut enan ad mg,. venom, qt. noslrud exercrtahon ullarnco labonsrhso ut abquip ex ea commodo consequat Du's aute wure dolor in reprehendent 1n voluptate veld esse cilium dolore eu fug,wt nulls panatur occaecat cupdatat non proder, suns on cut'pa qua offroa deserunt molht arum hd esllaborurn </p>
+                             
+                            <a href="#" class="text-link">Add Comment</a>
+                        </div>
+                        <span class="clear"></span>
+                    </li>
+                    <li>
+                        <div class="cust-profile">
+                            <figure><img src="resources/images/user2.jpg" alt=""></figure>
+                            <strong class="user-name">Johnatan Doe</strong>
+                            <span class="date">August 28, 2016:</span>
+                        </div>
+                        <div class="cust-comments">
+                             <div class="user-ratings">
+                                 <strong>Excelent</strong>
+                                <span class="rating four-star"></span>
+                            </div>
+                            <p>Lorem gypsum dolor. amet, consedetur adiposong el, sed do eiusrnod tempor incidhriunt ut labore et dolore magna ahqua Ut enan ad mg,. venom, qt. noslrud exercrtahon ullarnco labonsrhso ut abquip ex ea commodo consequat Du's aute wure dolor in reprehendent 1n voluptate veld esse cilium dolore eu fug,wt nulls panatur occaecat cupdatat non proder, suns on cut'pa qua offroa deserunt molht arum hd esllaborurn </p>
+                            
+                            
+                            <a href="#" class="text-link">Add Comment</a>
+                        </div>
+                        <span class="clear"></span>
+                    </li><li>
+                        <div class="cust-profile">
+                            <figure><img src="resources/images/user1.jpg" alt=""></figure>
+                            <strong class="user-name">Johnatan Doe</strong>
+                            <span class="date">August 28, 2016:</span>
+                        </div>
+                        <div class="cust-comments">
+                            <div class="user-ratings">
+                                 <strong>Excelent</strong>
+                                <span class="rating four-star"></span>
+                            </div>
+                            <p>Lorem gypsum dolor. amet, consedetur adiposong el, sed do eiusrnod tempor incidhriunt ut labore et dolore magna ahqua Ut enan ad mg,. venom, qt. noslrud exercrtahon ullarnco labonsrhso ut abquip ex ea commodo consequat Du's aute wure dolor in reprehendent 1n voluptate veld esse cilium dolore eu fug,wt nulls panatur occaecat cupdatat non proder, suns on cut'pa qua offroa deserunt molht arum hd esllaborurn </p>
+                             
+                            <a href="#" class="text-link">Add Comment</a>
+                        </div>
+                        <span class="clear"></span>
+                    </li>
+                    <li>
+                        <div class="cust-profile">
+                            <figure><img src="resources/images/user2.jpg" alt=""></figure>
+                            <strong class="user-name">Johnatan Doe</strong>
+                            <span class="date">August 28, 2016:</span>
+                        </div>
+                        <div class="cust-comments">
+                             <div class="user-ratings">
+                                 <strong>Excelent</strong>
+                                <span class="rating four-star"></span>
+                            </div>
+                            <p>Lorem gypsum dolor. amet, consedetur adiposong el, sed do eiusrnod tempor incidhriunt ut labore et dolore magna ahqua Ut enan ad mg,. venom, qt. noslrud exercrtahon ullarnco labonsrhso ut abquip ex ea commodo consequat Du's aute wure dolor in reprehendent 1n voluptate veld esse cilium dolore eu fug,wt nulls panatur occaecat cupdatat non proder, suns on cut'pa qua offroa deserunt molht arum hd esllaborurn </p>
+                            
+                            
+                            <a href="#" class="text-link">Add Comment</a>
+                        </div>
+                        <span class="clear"></span>
+                    </li><li>
+                        <div class="cust-profile">
+                            <figure><img src="resources/images/user1.jpg" alt=""></figure>
+                            <strong class="user-name">Johnatan Doe</strong>
+                            <span class="date">August 28, 2016:</span>
+                        </div>
+                        <div class="cust-comments">
+                            <div class="user-ratings">
+                                 <strong>Excelent</strong>
+                                <span class="rating four-star"></span>
+                            </div>
+                            <p>Lorem gypsum dolor. amet, consedetur adiposong el, sed do eiusrnod tempor incidhriunt ut labore et dolore magna ahqua Ut enan ad mg,. venom, qt. noslrud exercrtahon ullarnco labonsrhso ut abquip ex ea commodo consequat Du's aute wure dolor in reprehendent 1n voluptate veld esse cilium dolore eu fug,wt nulls panatur occaecat cupdatat non proder, suns on cut'pa qua offroa deserunt molht arum hd esllaborurn </p>
+                             
+                            <a href="#" class="text-link">Add Comment</a>
+                        </div>
+                        <span class="clear"></span>
+                    </li>
+                    <li>
+                        <div class="cust-profile">
+                            <figure><img src="resources/images/user2.jpg" alt=""></figure>
+                            <strong class="user-name">Johnatan Doe</strong>
+                            <span class="date">August 28, 2016:</span>
+                        </div>
+                        <div class="cust-comments">
+                             <div class="user-ratings">
+                                 <strong>Excelent</strong>
+                                <span class="rating four-star"></span>
+                            </div>
+                            <p>Lorem gypsum dolor. amet, consedetur adiposong el, sed do eiusrnod tempor incidhriunt ut labore et dolore magna ahqua Ut enan ad mg,. venom, qt. noslrud exercrtahon ullarnco labonsrhso ut abquip ex ea commodo consequat Du's aute wure dolor in reprehendent 1n voluptate veld esse cilium dolore eu fug,wt nulls panatur occaecat cupdatat non proder, suns on cut'pa qua offroa deserunt molht arum hd esllaborurn </p>
+                            
+                            
+                            <a href="#" class="text-link">Add Comment</a>
+                        </div>
+                        <span class="clear"></span>
+                    </li><li>
+                        <div class="cust-profile">
+                            <figure><img src="resources/images/user1.jpg" alt=""></figure>
+                            <strong class="user-name">Johnatan Doe</strong>
+                            <span class="date">August 28, 2016:</span>
+                        </div>
+                        <div class="cust-comments">
+                            <div class="user-ratings">
+                                 <strong>Excelent</strong>
+                                <span class="rating four-star"></span>
+                            </div>
+                            <p>Lorem gypsum dolor. amet, consedetur adiposong el, sed do eiusrnod tempor incidhriunt ut labore et dolore magna ahqua Ut enan ad mg,. venom, qt. noslrud exercrtahon ullarnco labonsrhso ut abquip ex ea commodo consequat Du's aute wure dolor in reprehendent 1n voluptate veld esse cilium dolore eu fug,wt nulls panatur occaecat cupdatat non proder, suns on cut'pa qua offroa deserunt molht arum hd esllaborurn </p>
+                             
+                            <a href="#" class="text-link">Add Comment</a>
+                        </div>
+                        <span class="clear"></span>
+                    </li>
+                    <li>
+                        <div class="cust-profile">
+                            <figure><img src="resources/images/user2.jpg" alt=""></figure>
+                            <strong class="user-name">Johnatan Doe</strong>
+                            <span class="date">August 28, 2016:</span>
+                        </div>
+                        <div class="cust-comments">
+                             <div class="user-ratings">
+                                 <strong>Excelent</strong>
+                                <span class="rating four-star"></span>
+                            </div>
+                            <p>Lorem gypsum dolor. amet, consedetur adiposong el, sed do eiusrnod tempor incidhriunt ut labore et dolore magna ahqua Ut enan ad mg,. venom, qt. noslrud exercrtahon ullarnco labonsrhso ut abquip ex ea commodo consequat Du's aute wure dolor in reprehendent 1n voluptate veld esse cilium dolore eu fug,wt nulls panatur occaecat cupdatat non proder, suns on cut'pa qua offroa deserunt molht arum hd esllaborurn </p>
+                            
+                            
+                            <a href="#" class="text-link">Add Comment</a>
+                        </div>
+                        <span class="clear"></span>
+                    </li>
+                    <li>
+                        <div class="cust-profile">
+                            <figure><img src="resources/images/user2.jpg" alt=""></figure>
+                            <strong class="user-name">Johnatan Doe</strong>
+                            <span class="date">August 28, 2016:</span>
+                        </div>
+                        <div class="cust-comments">
+                             <div class="user-ratings">
+                                 <strong>Excelent</strong>
+                                <span class="rating four-star"></span>
+                            </div>
+                            <p>Lorem gypsum dolor. amet, consedetur adiposong el, sed do eiusrnod tempor incidhriunt ut labore et dolore magna ahqua Ut enan ad mg,. venom, qt. noslrud exercrtahon ullarnco labonsrhso ut abquip ex ea commodo consequat Du's aute wure dolor in reprehendent 1n voluptate veld esse cilium dolore eu fug,wt nulls panatur occaecat cupdatat non proder, suns on cut'pa qua offroa deserunt molht arum hd esllaborurn </p>
+                            
+                            
+                            <a href="#" class="text-link">Add Comment</a>
+                        </div>
+                        <span class="clear"></span>
+                    </li>
+                </ul>
+                    <a class="load_more text-link">Load More (<span class="more-list"></span>)</a>
+                </div>
+            </div>
         </div>
         <div id="section-4" class="section">
             <strong>Section 4</strong>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            
         </div>
         </div>
         
@@ -275,26 +682,11 @@
     <script type="text/javascript" src="resources/js/plugins.js"></script>
     <script type="text/javascript" src="resources/js/custom.js"></script>
     <script>
-        var slideOpen = true;
-        var heightChecked = false;
-        var initHeight = 0;
-
-        function slideToggle() {
-          
-            var mdiv = document.getElementById('nav');
-            if(!heightChecked) {
-                initHeight = mdiv.offsetHeight;
-                heightChecked = true;
-            }
-            if(slideOpen) {
-                slideOpen = false;
-                mdiv.style.height = '0px';
-            }
-            else {
-                slideOpen = true;
-                mdiv.style.height = initHeight + 'px';
-            }
-        }
+        var image = document.getElementsByClassName('thumbnail');
+            new simpleParallax(image, {
+                scale: 1.15
+            });
     </script>
 </body>
 </html>
+
